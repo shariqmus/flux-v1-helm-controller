@@ -46,5 +46,7 @@ helm upgrade -i helm-operator fluxcd/helm-operator --wait \
 
 kubectl -n fluxcd logs deployment/flux -f
 
+k describe helmreleases.helm.fluxcd.io/ingress-nginx -n fluxcd
+
 ```
 
