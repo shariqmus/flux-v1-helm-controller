@@ -1,9 +1,6 @@
 # flux-v1-helm-controller
 Testing with flux-v1-helm-controller
 
-
-#########kubectl create secret generic flux-git-deploy --from-file=identity=./id_rsa -n flux --dry-run=client -o yaml | kubectl apply -f -
-
 # Install Flux by providing your GitHub repository URL:
 
 
@@ -38,6 +35,22 @@ helm upgrade -i helm-operator fluxcd/helm-operator --wait \
             --set git.pollInterval=1m \
             --set chartsSyncInterval=1m \
             --set helm.versions=v3
+```
+
+
+# Flux installs following Pods:
+
+- flux
+- flux-memcached
+- helm-operator
+
+
+# Uninstall
+
+```
+$ helm uninstall helm-operator -n fluxcd
+$ helm uninstall flux -n fluxcd
+
 ```
 
 # Troubleshooting
