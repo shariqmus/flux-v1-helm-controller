@@ -52,4 +52,7 @@ $ kubectl describe helmreleases.helm.fluxcd.io/ingress-nginx -n ingress-nginx
 
 
 # References
-
+[0] shariqmus/flux-v1-helm-controller: Testing with flux-v1-helm-controller https://github.com/shariqmus/flux-v1-helm-controller
+[1] Prerequisites | GitOps Helm Workshop https://helm.workshop.flagger.dev/prerequisites/#flux
+[2] fluxcd/flux: Successor: https://github.com/fluxcd/flux2 https://github.com/fluxcd/flux
+[3] fluxcd/helm-operator-get-started: Managing Helm releases with Flux Helm Operator https://github.com/fluxcd/helm-operator-get-started/tree/master
